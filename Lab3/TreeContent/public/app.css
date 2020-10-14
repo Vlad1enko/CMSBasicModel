@@ -1,0 +1,178 @@
+body, html {
+    font-family: 'Nunito';
+    height: 100%;
+    margin: 0;
+}
+.container {
+    height: 100%;
+}
+#hero__image {
+    min-height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+#hero__image::before {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    filter: blur(4px);
+    content: "";
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(https://api.discovery.com/v1/images/5e84e407f5b0ee36f6091165?aspectRatio=16x9&width=1400&key=3020a40c2356a645b4b4);
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/* #hero__wrapper {
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.205);
+    border-radius: 15px;
+} */
+#hero__image p:first-child {
+    font-size: 122px;
+}
+#hero__image p {
+    text-align: center;
+    margin: 0;
+    font-size: 60px;
+    font-weight: 400;
+}
+#hero__image p strong {
+    font-weight: 700;
+    color: aqua;
+}
+#posts {
+    background: white;
+}
+#posts {
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 50%;
+}
+#posts h1 {
+    display: inline-block;
+}
+#posts-wrapper {
+    background-color: white;
+}
+h1 {
+    text-align: center;
+}
+hr {
+    border: none;
+    margin: 16px 0;
+    background-color: rgb(0, 180, 180);
+    height: 2px;
+    clear: both;
+}
+.post-divider {
+    background-color: gray;
+    height: 1px;
+    margin: 24px 0;
+}
+input, textarea {
+    margin: 0 5px;
+    font-size: 15px;
+    color: #555555;
+    line-height: 1.2;
+    height: 45px;
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 0 5px;
+    border-bottom: 1px solid gray;
+    width: 60%;
+    resize: vertical;
+}
+textarea {
+    width: 80%;
+    height: 80px;
+}
+#button {
+    width: 70%;
+    display: block;
+    margin: 20px auto 40px;
+    padding: 10px 15px;
+    border: 1px solid gray;
+    border-radius: 2px;
+    background: transparent;
+    cursor: pointer;
+}
+label {
+    display: block;
+    margin: 10px 0;
+}
+#post-time {
+    float: right;
+    margin: 0;
+    font-size: 12px;
+    color: gray;
+}
+h3 {
+    display: inline;
+}
+#form_rus, #form_eng {
+    display: block;
+}
+#lang-button {
+    float: right;
+    text-decoration: none;
+    color: black;
+}
+#admin-button {
+    float: left;
+    text-decoration: none;
+    color: black;
+}
+#lang-button h3, #admin-button h3 {
+    margin: 0;
+}
+#posts__title {
+    text-align: center;
+}
+#image_link {
+    width: 90%;
+}
+.post__image {
+    width: 100%;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+#image {
+    outline: 0;
+}
+.update-button, .delete-button {
+    box-sizing: border-box;
+    float: right;
+    margin: 0px 2px 5px;
+    padding: 10px 15px;
+    border: 1px solid gray;
+}
+.view_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 15px;
+}
+.tiles {
+    position: relative;
+    background-color: rgb(214, 214, 214);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px gray;
+    padding: 15px 10px;
+}
+.tiles:hover {
+    background-color: rgb(228, 228, 228);
+    
+}
